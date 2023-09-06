@@ -1,0 +1,28 @@
+.modal{
+    .modal-dialog{
+        .modal-content{
+            background-color: $color-dark;
+            .modal-header{
+                background-color: $color-dark-mid;
+                .btn-close{
+                    color: $color-white;
+                }
+            }
+            .modal-body{
+                textarea{
+                    width: 100%;
+                    padding: 10px;
+                    color: $color-white;
+                    background-color: $color-dark;
+                    border: none;
+                    outline: none;
+                }
+            }
+            .modal-footer{
+                .btn{
+                    @include button;
+                }
+            }
+        }
+    }
+}

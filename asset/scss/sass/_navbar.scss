@@ -1,0 +1,62 @@
+.navbar{
+    width: 100%;
+    background-color: #3c4043;
+    border-bottom-color: #5f6368;
+    position: relative;
+    .logo{
+        width: 20%;
+        font-size: 24px;
+        font-family: $press;
+        font-weight: 400;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    .hamburger{
+        font-size: 50px;
+        display: none;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    .nav_menu{
+        display: flex;
+        padding-top: 15px;
+        li{
+            a{
+                font-family: $roboto;
+                font-weight: 500;
+                font-size: 15px;
+                letter-spacing: 0.15em;
+                color: #FFFFFF;
+                margin-right: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 912px){
+    .navbar{
+        .logo{
+            width: 40%;
+        }
+        .hamburger{
+            display: block;
+        }
+        .nav_menu{
+            background-color: #3c4043;
+            position: absolute;
+            left: -100%;
+            top: 100%;
+            width: 100%;
+            display: block;
+            text-align: center;
+            transition: all linear 0.5s;
+            li{
+                margin-bottom: 20px;
+            }
+        }
+        .active_nav_menu{
+            left: 0;
+        }
+    }
+}

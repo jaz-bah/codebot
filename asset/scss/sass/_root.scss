@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$color-white: #fff;
+$color-black: #000;
+$color-light: #545454;
+$color-dark-mid: #202020;
+$color-dark: #141414;
+
+$bg-color-dark: #2b2d2e;
+$bg-color-light: #3c4043;
+
+$press: 'Press Start 2P', cursive;
+$roboto: 'Roboto Slab', serif;
+
+// $font-bold: ;
+// $font-semibold: ;
+// $font-bolder: ;
+
+
+$font-size-normal: 15px;
+$font-size-medium: 20px;
+$font-size-learge: 25px;
+
+// @mixin heading1 {
+
+// }
+@mixin button {
+    border-radius: 5px;
+    border: none;
+    background-color: $bg-color-light;
+    color: white;
+    transition: t(0.3);
+    &:hover{
+        background-color: $bg-color-dark;
+        color: $color-black;
+    }
+}
+
+
+// @function name(){
+
+// }
+
+@function t($time){
+    @return all linear $time+s
+}
+
+.imgbox_full,
+.imgbox{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.imgbox_full{
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+

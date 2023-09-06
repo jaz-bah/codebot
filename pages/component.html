@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--bar-->
+    <title>JARVIS</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <!--Bootstrap_CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!--Google_fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+
+    <!--Box_icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--animate_CSS
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+
+    <!--Code-viewer_CSS-->
+    <link rel="stylesheet" href="../asset/css/prism.css">
+
+    <!--My_CSS-->
+    <link rel="stylesheet" href="../asset/scss/main.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
+
+
+</head>
+<body>
+    <!--head-start-->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">JARVIS</a>
+            <span class="hamburger">
+                <i class='bx bx-menu'></i>
+            </span>
+     
+            <ul class="nav_menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./files.html">Files</a></li>
+                <li><a href="#">Component</a></li>
+                <li><a href="./preset.html">Preset</a></li>
+                <li><a href="./storage.html">Storage</a></li>
+                <li><a href="./tools.html">Tools</a></li>
+                <li><a href="./extensions.html">Extensions</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--head-end-->
+    
+    <!--body-start-->
+    <secion class="my_component_section">
+        <div class="container">
+            <h2 id="previewComponentName"></h2>
+            <div id="previewComponent" class="row preview_component"></div>
+            <div class="row mt-5">
+                <h2 class="category_title">Html component / Navbars</h2>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/nav_1.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Navbar-1</h4>
+                        <button type="button" onclick="loadComponent('navbar1')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/nav_2.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Navbar-2</h4>
+                        <button type="button" onclick="loadComponent('navbar2')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/nav_3.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Navbar-2</h4>
+                        <button type="button" onclick="loadComponent('navbar3')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+
+                <h2 class="category_title">Html component / Hamburger</h2>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/ham1.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Hamburger-1</h4>
+                        <button type="button" onclick="loadComponent('hamburger1')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/ham2.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Hamburger-2</h4>
+                        <button type="button" onclick="loadComponent('hamburger2')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/ham3.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Hamburger-3</h4>
+                        <button type="button" onclick="loadComponent('hamburger3')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/ham4.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Hamburger-4</h4>
+                        <button type="button" onclick="loadComponent('hamburger4')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/ham5.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Hamburger-5</h4>
+                        <button type="button" onclick="loadComponent('hamburger5')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/ham6.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Hamburger-6</h4>
+                        <button type="button" onclick="loadComponent('hamburger6')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/ham7.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Hamburger-7</h4>
+                        <button type="button" onclick="loadComponent('hamburger7')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/ham8.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Hamburger-8</h4>
+                        <button type="button" onclick="loadComponent('hamburger8')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/ham9.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Hamburger-9</h4>
+                        <button type="button" onclick="loadComponent('hamburger9')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/ham10.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Hamburger-10</h4>
+                        <button type="button" onclick="loadComponent('hamburger10')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/ham11.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Hamburger-11</h4>
+                        <button type="button" onclick="loadComponent('hamburger11')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                  <div class="card">
+                    <div class="imgbox">
+                      <img class="card-img-top" src="../asset/image/ham12.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Hamburger-12</h4>
+                      <button type="button" onclick="loadComponent('hamburger12')">Code</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                  <div class="card">
+                    <div class="imgbox">
+                      <img class="card-img-top" src="../asset/image/ham13.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Hamburger-svg-13</h4>
+                      <button type="button" onclick="loadComponent('hamburger13')">Code</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                  <div class="card">
+                    <div class="imgbox">
+                      <img class="card-img-top" src="../asset/image/ham14.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Hamburger-svg-14</h4>
+                      <button type="button" onclick="loadComponent('hamburger14')">Code</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                  <div class="card">
+                    <div class="imgbox">
+                      <img class="card-img-top" src="../asset/image/ham15.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Hamburger-svg-15</h4>
+                      <button type="button" onclick="loadComponent('hamburger15')">Code</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                  <div class="card">
+                    <div class="imgbox">
+                      <img class="card-img-top" src="../asset/image/ham16.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Hamburger-svg-16</h4>
+                      <button type="button" onclick="loadComponent('hamburger16')">Code</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                  <div class="card">
+                    <div class="imgbox">
+                      <img class="card-img-top" src="../asset/image/ham17.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Hamburger-svg-17</h4>
+                      <button type="button" onclick="loadComponent('hamburger17')">Code</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                  <div class="card">
+                    <div class="imgbox">
+                      <img class="card-img-top" src="../asset/image/ham18.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Hamburger-svg-18</h4>
+                      <button type="button" onclick="loadComponent('hamburger18')">Code</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                  <div class="card">
+                    <div class="imgbox">
+                      <img class="card-img-top" src="../asset/image/ham19.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Hamburger-svg-19</h4>
+                      <button type="button" onclick="loadComponent('hamburger19')">Code</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                  <div class="card">
+                    <div class="imgbox">
+                      <img class="card-img-top" src="../asset/image/ham20.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Hamburger-svg-20</h4>
+                      <button type="button" onclick="loadComponent('hamburger20')">Code</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                  <div class="card">
+                    <div class="imgbox">
+                      <img class="card-img-top" src="../asset/image/ham21.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Hamburger-svg-21</h4>
+                      <button type="button" onclick="loadComponent('hamburger21')">Code</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                  <div class="card">
+                    <div class="imgbox">
+                      <img class="card-img-top" src="../asset/image/ham22.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Hamburger-svg-22</h4>
+                      <button type="button" onclick="loadComponent('hamburger22')">Code</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-12 col-md-4 col-lg-3">
+                  <div class="card">
+                    <div class="imgbox">
+                      <img class="card-img-top" src="../asset/image/ham23.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Hamburger-svg-23</h4>
+                      <button type="button" onclick="loadComponent('hamburger23')">Code</button>
+                    </div>
+                  </div>
+                </div>
+
+
+                <h2 class="category_title">Html component / Modal</h2>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/unfoldin-modal.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Unfolding-modal</h4>
+                        <button type="button" onclick="loadComponent('unfoldingModal')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/reveling-modal.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">reveling-modal</h4>
+                        <button type="button" onclick="loadComponent('revealingModal')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/uncovering-modal.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Uncoverin-modal</h4>
+                        <button type="button" onclick="loadComponent('uncoveringModal')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/blowup-modal.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Blow Up-modal</h4>
+                        <button type="button" onclick="loadComponent('blowUpModal')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/meep-modal.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Meep Meep-modal</h4>
+                        <button type="button" onclick="loadComponent('meepModal')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/sketch-modal.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Sketch-modal</h4>
+                        <button type="button" onclick="loadComponent('sketchModal')">Code</button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card">
+                      <div class="imgbox">
+                        <img class="card-img-top" src="../asset/image/bond-modal.png" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Bond-modal</h4>
+                        <button type="button" onclick="loadComponent('bondModal')">Code</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </secion>
+    <!--body-end-->
+    
+    <!--footer-start-->
+        
+    <!--footer-end-->
+
+    <!-- floating-section-start -->
+    <!-- Modal -->
+
+
+    <!-- floating-section-end -->
+
+
+    <!--Bootstrap_JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!--Code-viewer_JS-->
+    <script src="../asset/js/prism.js"></script>
+
+    <!--My_JavaScript-->
+    <script src="../asset/js/script.js"></script>
+</body>
+</html>

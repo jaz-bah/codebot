@@ -1,0 +1,42 @@
+.tools_section,
+.extensions_section{
+    padding: 60px;
+    ol{
+        list-style: number;
+        li{
+            margin-bottom: 10px;
+            div{
+                margin-left: 10px;
+                background-color: $color-dark;
+                padding: 10px 20px;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                a,
+                span{
+                    color: $color-white;
+                    background-color: transparent;
+                    margin-left: 5px;
+                    font-size: 20px;
+                    padding: 5px 7px;
+                    border-radius: 5px;
+                    transition: t(0.3);
+                    cursor: pointer;
+                    i{
+                        cursor: pointer;
+                    }
+
+                    &:hover{
+                        background-color: $color-dark-mid;
+                    }
+                    &:active{
+                        background-color: $color-dark-mid;
+                        color: $color-black;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.file_section{
+    padding: 20px 0px;
+
+    .category_title{
+        margin: 50px 0px 20px 0px;
+        font-size: 18px;
+        position: relative;
+        width: 100%;
+        &::after{
+            position: absolute;
+            top: 50%;
+            margin-left: 5px;
+            transform: translateY(-50%);
+            content: '';
+            height: 2px;
+            width: 20%;
+            background-color: aliceblue;
+        }
+    }
+
+    .card{
+        background-color: transparent;
+        border: none;
+
+        .head{
+            text-align: center;
+            i{
+                font-size: 120px;
+            }
+        }
+
+        .body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a{
+                @include button;
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                font-family: $roboto;
+                font-weight: 400;
+                cursor: pointer;
+
+                i{
+                    font-size: 20px;
+                    margin-left: 2px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
