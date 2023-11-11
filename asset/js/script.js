@@ -3088,6 +3088,22 @@ $( document ).ready(function() {
 });
   `
   },
+  {
+    title: "section schema",
+    description: "section schema",
+    language: "javascript",
+    code:`
+{
+  "name": "",
+  "settings": [],
+  "presets": [
+    {
+      "name": ""
+    }
+  ]
+}
+  `
+  },
 ]
 
 //render preset
